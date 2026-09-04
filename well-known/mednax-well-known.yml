@@ -1,0 +1,134 @@
+generated: '2026-09-04'
+method: probed
+source: >-
+  Live anonymous HTTPS probes of every host this record knows — the registrable domain
+  mednax.com and www, plus pediatrix.com and www.pediatrix.com, the hosts mednax.com
+  now redirects to after the MEDNAX -> Pediatrix Medical Group rebrand. There are no
+  API baseURL hosts and no OpenAPI servers[] hosts in this record to probe.
+note: >-
+  Recorded absence. No /.well-known/ document is served on any Pediatrix/MEDNAX host.
+  www.pediatrix.com answers 404 for every path with its site 404 page; the bare
+  pediatrix.com apex 301s to www; mednax.com and www.mednax.com 302 to pediatrix.com.
+  No WellKnown or SecurityTxt pointer is emitted in apis.yml, because nothing was served.
+path_echo_control: passed
+control_note: >-
+  A negative control at /.well-known/mednax-negative-control-7f3ab91c.json — a path that
+  cannot exist — returned 404 on www.pediatrix.com, matching every real path, so this host
+  is not a path-echoing false-positive source.
+hosts:
+  - host: www.pediatrix.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 404
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+        file: null
+      - path: /.well-known/oauth-protected-resource
+        status: 404
+        file: null
+      - path: /.well-known/api-catalog
+        status: 404
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 404
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 404
+        file: null
+      - path: /.well-known/agent.json
+        status: 404
+        file: null
+      - path: /.well-known/mednax-negative-control-7f3ab91c.json
+        status: 404
+        file: null
+        note: negative control — 404 as required
+  - host: pediatrix.com
+    note: apex 301s to https://www.pediatrix.com for every path probed
+    documents:
+      - path: /.well-known/security.txt
+        status: 301
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 301
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 301
+        file: null
+      - path: /.well-known/oauth-protected-resource
+        status: 301
+        file: null
+      - path: /.well-known/api-catalog
+        status: 301
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 301
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 301
+        file: null
+      - path: /.well-known/agent.json
+        status: 301
+        file: null
+  - host: www.mednax.com
+    note: 302s to https://www.pediatrix.com for every path probed (2022 rebrand)
+    documents:
+      - path: /.well-known/security.txt
+        status: 302
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 302
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 302
+        file: null
+      - path: /.well-known/oauth-protected-resource
+        status: 302
+        file: null
+      - path: /.well-known/api-catalog
+        status: 302
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 302
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 302
+        file: null
+      - path: /.well-known/agent.json
+        status: 302
+        file: null
+  - host: mednax.com
+    note: 302s to https://www.pediatrix.com for every path probed
+    documents:
+      - path: /.well-known/security.txt
+        status: 302
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 302
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 302
+        file: null
+      - path: /.well-known/oauth-protected-resource
+        status: 302
+        file: null
+      - path: /.well-known/api-catalog
+        status: 302
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 302
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 302
+        file: null
+      - path: /.well-known/agent.json
+        status: 302
+        file: null
+  - host: apps.mednax.com
+    note: >-
+      Resolves to 205.196.24.210 but TCP 443 and 80 both time out from the probe host —
+      not publicly reachable, so no /.well-known/ path could be probed.
+    documents: []

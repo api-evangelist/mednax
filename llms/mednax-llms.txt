@@ -1,0 +1,47 @@
+# Pediatrix Medical Group (formerly MEDNAX)
+
+> Pediatrix Medical Group, Inc. (NYSE: MD) — known as MEDNAX until its 2022 rebrand — is a
+> US physician services organization delivering neonatal, maternal-fetal, pediatric cardiology,
+> pediatric surgical and other pediatric subspecialty care through affiliated practices at
+> hospitals and clinics across the country. Its corporate domain mednax.com now redirects to
+> www.pediatrix.com. As of a 2026-09-04 probe pass, Pediatrix publishes **no public API, no
+> developer portal, no machine-readable specification, and no /.well-known/ discovery
+> documents**. This file is an API Evangelist third-party profile of a company that has no
+> public developer surface, not a document published by Pediatrix.
+
+## What this company is
+
+- [Pediatrix & Obstetrix — home](https://www.pediatrix.com/): Patient- and hospital-facing site for the affiliated practices.
+- [About Pediatrix](https://www.pediatrix.com/about): Company overview, leadership, history.
+- [For hospitals](https://www.pediatrix.com/for-hospitals): Hospital-partner service lines — neonatology, maternal-fetal medicine, pediatric cardiology, telehealth.
+- [For clinicians](https://www.pediatrix.com/for-clinicians): Research, education, conferences (NEO, Specialty Review), practice acquisition.
+- [Careers (joinpediatrix.com)](https://www.joinpediatrix.com/): Clinical and corporate hiring.
+
+## Software the company operates
+
+- [BabySteps Cloud](https://www.pediatrix.com/for-hospitals/babysteps-cloud): Pediatrix's cloud clinical documentation tool for NICUs, feeding the Pediatrix Clinical Data Warehouse. The page states it "has the ability to import data into major EHRs for cross-functional system integration" but publishes no API, HL7/FHIR interface specification, or developer documentation. It is sold to hospital partners as an end-user product.
+- Patient-facing tools are third-party platforms operated by other vendors, not Pediatrix APIs: [Ambra](https://www.pediatrix.com/pay-my-bill/patient-tools/ambra-faqs) (imaging), [NextGen](https://www.pediatrix.com/pay-my-bill/patient-tools/nextgen-faqs) (patient portal), [Phreesia](https://www.pediatrix.com/pay-my-bill/patient-tools/phreesia-faqs) (intake/check-in).
+
+## Corporate and investor
+
+- [Investor relations](https://mednax.gcs-web.com/): Pediatrix Medical Group, Inc. investor site (still on the mednax.gcs-web.com host).
+- [News releases](https://mednax.gcs-web.com/news-releases): Company press releases.
+- [Newsroom / for media](https://www.pediatrix.com/about/for-media): Media resources and news.
+- [Contact](https://www.pediatrix.com/contact-us)
+- [Terms and conditions](https://www.pediatrix.com/terms-and-conditions)
+- [Notice of privacy practices](https://www.pediatrix.com/notice-of-privacy-practices)
+
+## What is NOT here, and what was checked
+
+- No OpenAPI, Swagger, GraphQL SDL, AsyncAPI, gRPC/Protobuf or WSDL contract was found. /openapi.json, /swagger.json, /api-docs and /llms.txt all return 404 on www.pediatrix.com and 302 on mednax.com.
+- No MCP server, no A2A agent card, no llms.txt published by the company.
+- No /.well-known/ documents on any Pediatrix or MEDNAX host — security.txt, openid-configuration, oauth-authorization-server, oauth-protected-resource, api-catalog, ai-plugin.json and agent-card.json all 404. A negative-control path also 404s, confirming the host is not path-echoing. See `well-known/mednax-well-known.yml`.
+- No `api.`, `developer.`, `developers.`, `portal.` or `fhir.` subdomain resolves on pediatrix.com or mednax.com. `apps.mednax.com` resolves but is not publicly reachable (TCP 443/80 time out).
+- The 5,758-URL sitemap at https://www.pediatrix.com/sitemap.xml contains no developer, API, integration or technical documentation page.
+- Historical note: this repository's blog and press archives cover MEDNAX Radiology Solutions / vRad AI work. That business was sold to Radiology Partners in December 2020 and vrad.com is not a Pediatrix host; nothing there is attributed to this company.
+
+## API Evangelist profile artifacts
+
+- [apis.yml](https://raw.githubusercontent.com/api-evangelist/mednax/refs/heads/main/apis.yml): The machine-readable APIs.json profile for this company.
+- [Domain security probe](security/mednax-domain-security.yml): TLS/HSTS/DNSSEC/CAA/SPF/DMARC observations.
+- [Well-known probe](well-known/mednax-well-known.yml): Recorded absence of every discovery document.

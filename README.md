@@ -1,4 +1,4 @@
-# Mednax
+# Pediatrix Medical Group (formerly MEDNAX)
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,12 +64,18 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-This is a repository for tracking the APIs, SDKs, and other developer resources for Mednax.
+This is a repository for tracking the APIs, SDKs, and other developer resources for Pediatrix Medical Group, Inc. (NYSE: MD), the physician services organization known as MEDNAX until its 2022 rebrand. The corporate domain mednax.com now redirects to www.pediatrix.com.
 
 ## APIs
 
-No APIs have been documented yet. Check back for updates.
+No APIs have been documented. As of a 2026-09-04 probe pass Pediatrix publishes no public API,
+developer portal, machine-readable specification, or `/.well-known/` discovery document. See
+`well-known/mednax-well-known.yml` for the recorded absence and `apis.yml` `x-coverage` for why.
 
 ## Properties
 
-- [Website](https://www.mednax.com)
+- [Website](https://www.pediatrix.com)
+- [About](https://www.pediatrix.com/about)
+- [Contact](https://www.pediatrix.com/contact-us)
+- [Careers](https://www.joinpediatrix.com)
+- [Investor relations](https://mednax.gcs-web.com/)

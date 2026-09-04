@@ -1,4 +1,36 @@
+name: Pediatrix Medical Group (formerly MEDNAX)
 aid: mednax
+description: >-
+  Pediatrix Medical Group, Inc. (NYSE: MD) — known as MEDNAX until its 2022 rebrand, and still
+  reachable at mednax.com, which now redirects to www.pediatrix.com — is a US physician services
+  organization delivering neonatal, maternal-fetal, pediatric cardiology, pediatric surgery and
+  other pediatric subspecialty care through affiliated practices at hospitals and clinics across
+  the country. Its one software product, BabySteps Cloud, is a cloud clinical documentation tool
+  for NICUs that feeds the Pediatrix Clinical Data Warehouse and is sold to hospital partners as
+  an end-user product. As of a 2026-09-04 probe pass Pediatrix publishes no public API, developer
+  portal, machine-readable specification, or /.well-known/ discovery document. The MEDNAX
+  Radiology Solutions / vRad business covered by this repository's older press and blog archive
+  was sold to Radiology Partners in December 2020 and is no longer part of this company.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/mednax.png
+url:
+  https://raw.githubusercontent.com/api-evangelist/mednax/refs/heads/main/apis.yml
+created: '2026-04-07'
+modified: '2026-09-04'
+specificationVersion: '0.23'
+tags:
+  - Fortune 1000
+  - Healthcare
+  - Health Care Services
+  - Physician Services
+  - Pediatrics
+  - Neonatology
+  - Hospitals
+  - Telehealth
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
+  - FN: APIs.json
+    email: info@apis.io
 deliveryModel:
   model: unknown
   open_source: false
@@ -10,7 +42,6 @@ deliveryModel:
   - none
   generated: '2026-08-28'
   method: derived
-specificationVersion: '0.23'
 accessModel:
   pricing: unknown
   onboarding: unknown
@@ -22,20 +53,65 @@ accessModel:
   source: []
   generated: '2026-07-22'
   method: derived
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/mednax.png
-tags:
-  - Fortune 1000
-url: 
-  https://raw.githubusercontent.com/api-evangelist/mednax/refs/heads/main/apis.yml
-modified: '2026-03-24'
 apis: []
 common:
+  - type: Website
+    url: https://www.pediatrix.com
+  - type: About
+    url: https://www.pediatrix.com/about
+  - type: ContactUs
+    url: https://www.pediatrix.com/contact-us
+  - type: Support
+    url: https://www.pediatrix.com/contact-us
+  - type: Careers
+    url: https://www.joinpediatrix.com
+  - type: InvestorRelations
+    url: https://mednax.gcs-web.com/
+  - type: Newsroom
+    url: https://mednax.gcs-web.com/news-releases
+  - type: PressReleases
+    url: https://www.pediatrix.com/about/for-media
+  - type: TermsOfService
+    url: https://www.pediatrix.com/terms-and-conditions
+  - type: PrivacyPolicy
+    url: https://www.pediatrix.com/notice-of-privacy-practices
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/pediatrix
+  - type: YouTube
+    url: https://www.youtube.com/@pediatrixmedicalgroup
+  - type: Instagram
+    url: https://www.instagram.com/pediatrixmed/
+  - type: LLMsTxt
+    url: llms/mednax-llms.txt
   - type: DomainSecurity
     url: security/mednax-domain-security.yml
-  - type: LinkedIn
-    url: https://www.linkedin.com/company/mednax
-  - type: Website
-    url: https://www.mednax.com
-description: >-
-  Led by physicians and trusted by patients, Pediatrix delivers advanced medical solutions
-  across a variety of practice areas around the country.
+x-enrichment:
+  date: '2026-09-04'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Pediatrix Medical Group (the former MEDNAX) is a physician services organization running
+    clinical practices, and mednax.com now 302s to www.pediatrix.com, whose 5,758-URL sitemap
+    contains no developer, API or integration page — its only software product, BabySteps Cloud,
+    is a NICU documentation tool sold to hospital partners with no published contract, and every
+    /.well-known/, /openapi.json and /llms.txt path 404s on the live host.
+  evidence:
+    - url: https://www.mednax.com/
+      status: 302
+    - url: https://www.pediatrix.com/
+      status: 200
+    - url: https://www.pediatrix.com/openapi.json
+      status: 404
+    - url: https://www.pediatrix.com/llms.txt
+      status: 404
+    - url: https://www.pediatrix.com/.well-known/security.txt
+      status: 404
+    - url: https://www.pediatrix.com/.well-known/agent-card.json
+      status: 404
+    - url: https://www.pediatrix.com/for-hospitals/babysteps-cloud
+      status: 200
+  checked: '2026-09-04'
