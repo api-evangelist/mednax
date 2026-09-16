@@ -20,6 +20,15 @@ specificationVersion: '0.23'
 tags:
   - Fortune 1000
   - Healthcare
+  - Healthcare Services
+  - Physician Services
+  - Pediatrics
+  - Neonatology
+  - Hospitals
+  - Telehealth
+tags_raw:
+  - Fortune 1000
+  - Healthcare
   - Health Care Services
   - Physician Services
   - Pediatrics
