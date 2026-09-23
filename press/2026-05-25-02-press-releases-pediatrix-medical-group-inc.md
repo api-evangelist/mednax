@@ -1,7 +1,9 @@
 ---
 title: Press Releases | Pediatrix Medical Group, Inc.
 url: https://mednax.gcs-web.com/news-releases
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Mednax" press release artificial intelligence'
 position: 2
 source: serpapi-google

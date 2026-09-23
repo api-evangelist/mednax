@@ -1,7 +1,9 @@
 ---
 title: MEDNAX Radiology Solutions Launches Artificial Intelligence ...
 url: https://mednax.gcs-web.com/news-releases/news-release-details/mednax-radiology-solutions-launches-artificial-intelligence
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Mednax" press release artificial intelligence'
 position: 1
 source: serpapi-google

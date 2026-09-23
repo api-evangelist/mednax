@@ -1,7 +1,9 @@
 ---
 title: Sorna Corporation - Latest News - SornaCorp
 url: https://pressroom.prlog.org/SornaCorp/
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Mednax" press release artificial intelligence'
 position: 5
 source: serpapi-google
