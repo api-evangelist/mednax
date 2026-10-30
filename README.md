@@ -64,18 +64,82 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-This is a repository for tracking the APIs, SDKs, and other developer resources for Pediatrix Medical Group, Inc. (NYSE: MD), the physician services organization known as MEDNAX until its 2022 rebrand. The corporate domain mednax.com now redirects to www.pediatrix.com.
+Pediatrix Medical Group, Inc. (NYSE: MD) — known as MEDNAX until its 2022 rebrand, and still reachable at mednax.com, which now redirects to www.pediatrix.com — is a US physician services organization delivering neonatal, maternal-fetal, pediatric cardiology, pediatric surgery and other pediatric subspecialty care through affiliated practices at hospitals and clinics across the country. Its one software product, BabySteps Cloud, is a cloud clinical documentation tool for NICUs that feeds the Pediatrix Clinical Data Warehouse and is sold to hospital partners as an end-user product. As of a 2026-09-04 probe pass Pediatrix publishes no public API, developer portal, machine-readable specification, or /.well-known/ discovery document. The MEDNAX Radiology Solutions / vRad business covered by this repository's older press and blog archive was sold to Radiology Partners in December 2020 and is no longer part of this company.
 
-## APIs
+**Areas:** Fortune 1000 · Healthcare · Healthcare Services · Physician Services · Pediatrics · Neonatology · Hospitals · Telehealth
 
-No APIs have been documented. As of a 2026-09-04 probe pass Pediatrix publishes no public API,
-developer portal, machine-readable specification, or `/.well-known/` discovery document. See
-`well-known/mednax-well-known.yml` for the recorded absence and `apis.yml` `x-coverage` for why.
+## Pediatrix Medical Group (formerly MEDNAX) on APIs.io
 
-## Properties
+Everything profiled for Pediatrix Medical Group (formerly MEDNAX) is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/mednax/](https://apis.io/providers/mednax/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Mednax Domain Security](https://apis.io/security/mednax/mednax-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.pediatrix.com)
-- [About](https://www.pediatrix.com/about)
-- [Contact](https://www.pediatrix.com/contact-us)
-- [Careers](https://www.joinpediatrix.com)
-- [Investor relations](https://mednax.gcs-web.com/)
+- [Support](https://www.pediatrix.com/contact-us)
+- [Terms of service](https://www.pediatrix.com/terms-and-conditions)
+- [Privacy policy](https://www.pediatrix.com/notice-of-privacy-practices)
+
+## API Evangelist rating
+
+**Kin Score 10.6** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 56.3 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 4.8 |
+| Access clarity | 21.1 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 10.9** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/mednax/](https://apis.io/providers/mednax/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Pediatrix Medical Group (formerly MEDNAX): the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/mednax/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
